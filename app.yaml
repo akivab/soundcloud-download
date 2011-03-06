@@ -1,0 +1,14 @@
+application: adichatclient
+version: 1
+runtime: python
+api_version: 1
+
+handlers:  
+
+- url: /img
+  static_dir: img
+
+- url: /.*
+  script: get_songs.py
+  
+  
